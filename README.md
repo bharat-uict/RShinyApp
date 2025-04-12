@@ -8,7 +8,7 @@ An interactive R Shiny application visualizing tobacco product use among U.S. mi
 
 This project extracts, cleans, and visualizes data from the following CDC report:
 
-📄 [Tobacco Product Use Among Middle and High School Students — United States, 2024](https://www.cdc.gov/mmwr/volumes/73/wr/mm7341a2.htm?s_cid=mm7341a2_w)
+[Tobacco Product Use Among Middle and High School Students — United States, 2024](https://www.cdc.gov/mmwr/volumes/73/wr/mm7341a2.htm?s_cid=mm7341a2_w)
 
 The final goal is to develop a web-based tool to explore usage statistics for various tobacco products (e.g., e-cigarettes, hookahs, cigarettes) across student demographics.
 
