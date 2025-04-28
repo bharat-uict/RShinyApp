@@ -1,0 +1,53 @@
+Tobacco Product Use Among Youth — R Shiny Application Project Report
+1. Concept and Purpose of the Shiny Application
+The purpose of the Shiny application is to provide an interactive, user-friendly interface to explore tobacco product use among U.S. middle and high school students based on the 2024 National Youth Tobacco Survey (NYTS) data published by the CDC. This application enables users to dynamically view, filter, and visualize tobacco use rates among different demographic groups (male and female students) and educational levels (middle school and high school). It allows public health professionals, researchers, educators, and policymakers to quickly identify usage patterns and make informed, data-driven decisions.
+2. Initial Plan and Motivation
+Motivation:
+The original dataset from the CDC was only available as static tables embedded in a webpage. The goal was to automate the extraction, cleaning, and organization of the data into usable datasets, then build an interactive dashboard that would make the data easier to explore and filter. The application was designed to distinguish between 'ever use' and 'current use' by students across different school levels and genders.
+Initial UI Plan Sketch:
+- Sidebar (left):
+  - Select Tobacco Use Category
+  - Select School Level
+  - Select Tobacco Product(s)
+  - Select Gender (Female / Male)
+- Main Panel (right):
+  - Table View (filtered data)
+  - Plot View (bar chart with error bars and estimated totals)
+Information Flow:
+User Inputs → Reactive Dataset Selection → Outputs: Table & Plot
+3. Dataset Used and Relevance to the Course
+Dataset:
+Source: CDC’s Morbidity and Mortality Weekly Report (MMWR) - 'Tobacco Product Use Among Middle and High School Students — National Youth Tobacco Survey, United States, 2024.
+
+Relevance:
+- Applied data wrangling, scraping, cleaning, and Shiny app development skills.
+- Practiced reactive programming and dynamic visualization techniques.
+- Used statistical summarization and interpretation relevant to epidemiology and biostatistics.
+4. Key Features of the App and User Interaction
+Inputs:
+- Tobacco Use Category (Ever Use or Current Use)
+- School Level (High School or Middle School)
+- Tobacco Product selection via checkboxes
+- Gender (Female or Male)
+Outputs:
+- Table View: Displays selected records filtered by product and school level.
+- Plot View: Bar graph showing usage percentages, 95% CI error bars, and estimated total users.
+- Clean font styles, tilted labels, centered titles for better readability.
+5. Server Logic Definition
+The server logic includes:
+- Reading and loading datasets from CDC sources.
+- Dynamically updating available products based on selected dataset.
+- Filtering data based on selected products.
+- Mapping appropriate percentage columns and error bars based on selected gender.
+- Displaying a filtered data table and a dynamically generated plot.
+6. Examples of Insights or Analyses
+Using the app, users can:
+- Identify the most used tobacco products among students.
+- Compare usage rates between genders.
+- Analyze reliability via confidence intervals.
+- Estimate potential population impacts through estimated totals.
+- Support public health strategies based on age and product usage trends.
+Example Insights:
+- E-cigarettes show the highest usage rates among high school students.
+- Smokeless tobacco products have broader confidence intervals, indicating higher estimate variability.
+- Male students generally report higher usage of smokeless products compared to females.
